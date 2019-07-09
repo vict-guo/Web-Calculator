@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+
+<div class="menu">
+
+<ul> 
+	<li ><a href="index.html">Home</a></li>
+	<li ><a href="home.html">Scientific Calculator</a></li>
+	<li ><a href="graphing.html">Graphing Calculator</a></li>
+</ul>
+
+</div>
+
+<div id="calculator">
+<h1 id = "head">Basic Calculator </h1>
+
+<br />
+
+<label class="switch">
+	<input type="checkbox" onclick="toggle()">
+	<span class="slider round"></span>
+</label>
+
+<textarea id="display" value=""> </textarea> 
+
+<br />
+<br />
+
+
+<button onclick="clearDisplay()">C</button>
+<button onclick="back()">DEL</button>
+<button onclick="append(this.value)" value="/">&divide;</button>
+<button onclick="append(this.value)" value="^">^</button>
+<button class = "adv" onclick="append(this.value)" value="(">(</button>
+<button class = "adv" onclick="append(this.value)" value=")">)</button>
+
+<br />
+
+<button onclick="button(this.value)" value="7">7 </button>
+<button onclick="button(this.value)" value="8">8 </button>
+<button onclick="button(this.value)" value="9">9 </button>
+<button onclick="append(this.value)" value="*">&times;</button>
+<button class = "adv" onclick="append(this.value)" value="PI">&pi;</button>
+<button class = "adv" onclick="append(this.value)" value="log(">log</button>
+
+<br />
+
+<button onclick="button(this.value)" value="4">4 </button>
+<button onclick="button(this.value)" value="5">5 </button>
+<button onclick="button(this.value)" value="6">6 </button>
+<button onclick="append(this.value)" value="+">&plus;</button>
+<button class = "adv" onclick="append(this.value)" value="e">e</button>
+<button class = "adv" onclick="append(this.value)" value="arcsin(">arcsin</button>
+
+<br />
+
+<button onclick="button(this.value)" value="1">1 </button>
+<button onclick="button(this.value)" value="2">2 </button>
+<button onclick="button(this.value)" value="3">3 </button>
+<button onclick="append(this.value)" value="-">&minus;</button>
+<button class = "adv" onclick="append(this.value)" value="sin(">sin</button>
+<button class = "adv" onclick="append(this.value)" value="arccos(">arccos</button>
+
+<br />
+
+<button onclick="button(this.value)" value="0">0 </button>
+<button onclick="append(this.value)" value=".">.</button>
+<button onclick="prevAns()">Ans</button>
+<button onclick="equals()">=</button>
+<button class = "adv" onclick="append(this.value)" value="cos(">cos</button>
+<button class = "adv" onclick="append(this.value)" value="tan(">tan</button>
+</div>
+</body>
+</html>

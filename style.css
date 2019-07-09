@@ -1,0 +1,215 @@
+
+#calculator {
+	text-align:center;
+	background-image: url("background.jpg");
+
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	right:250px;
+	left:250px;
+
+}
+
+#head {
+	text-align:center;
+	display:block;
+}
+
+.menu{
+  position:absolute;
+  left:0px;
+}
+
+.main{
+  text-align:center;
+  background-image:url("menubackground.jpg");
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  left:250px;
+  right:250px;
+}
+
+#maintitle{
+  color:white;
+  font-size:100px;
+  font-family: sans-serif;
+}
+
+.link{
+  position:relative;
+  top:200px;
+  font-style:italic;
+  color:white;
+  font-size:40px;
+  text-decoration:none;
+}
+
+
+a{
+  color:white;
+  font-size:16px;
+  text-decoration:none;
+}
+
+a:hover{
+  color:blue;
+}
+
+a:active{
+  transform: translateY(4px);
+}
+
+
+ul{
+  list-style-type:none;
+  padding:20px;
+  display:block;
+}
+
+li{
+  margin:10px;
+  border:solid 3px blue;
+  border-radius:5px;
+  background-color:#42c2f4;
+  padding:10px;
+}
+ /* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  left:300px;
+  top:35px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	display:none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+.adv{
+	display:none;
+}
+
+textarea{
+	text-align:right;
+	width:400px;
+	font-size:28px;
+	resize:none;
+	border-radius: 5px;
+}
+
+button{
+	background-color: #424bf4;
+	border:solid;
+	color:white;
+	padding:15px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	width:100px;
+	border-radius: 10px;
+	position:relative;
+	display:inline;
+}
+
+button:hover {background-color: #1e90ff}
+
+button:active {
+  background-color: #1e90ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*Graphing Calculator*/
+#graph{
+  position:absolute;
+  top:0px;
+  left:300px;
+}
+#myCanvas{
+  border:solid;
+  color:black;
+  width:900px;
+  height:900px;
+}
+#sidebar{
+  position:absolute;
+  top:0px;
+}
+#add-btn{
+  position:absolute;
+  left:1400px;
+  top:195px;
+}
+#texts{
+  width:300px;
+  height:50px;
+  text-align:left;
+  font-size:18px;
+  position:absolute;
+  left:1400px;
+  top:135px;
+}
+#form{
+  
+  
+}
+#prompt{
+  display:block;
+  color:black;
+  font-size:22px;
+  position:absolute;
+  left:1350px;
+  top:122px;
+}

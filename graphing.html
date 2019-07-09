@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Calculator</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+	
+<div class="menu">
+
+<ul> 
+	<li class="menulink"><a class="menulink" href="index.html">Home</a></li>
+	<li class="menulink"><a class="menulink" href="home.html">Scientific Calculator</a></li>
+	<li class="menulink"><a class="menulink" href="graphing.html">Graphing Calculator</a></li>
+</ul>
+
+</div>
+
+<div id="graph">
+	<canvas id = "myCanvas">
+	</canvas>
+</div>
+
+<div id="sidebar">
+
+	<div id="form">
+		<div>
+		<h1 id="prompt">y= </h1>
+		</div>
+		 <textarea id = "texts" value = "" placeholder="type an expression"></textarea>
+		<button id="add-btn" onclick="graphFunction()"> Graph </button>
+	</div>
+
+</div>
+
+</body>
+</html>
